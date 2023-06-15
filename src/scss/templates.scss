@@ -1,0 +1,10 @@
+// Импортируем миксины
+@import "mixins/appearance";
+@import "mixins/backdrop";
+@import "mixins/boxSizing";
+@import "mixins/userSelect";
+
+// Импортируем шаблоны
+@import "templates/flexCenter";
+@import "templates/uiContainer";
+@import "templates/notSelectable";

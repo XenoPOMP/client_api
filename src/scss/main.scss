@@ -1,0 +1,28 @@
+// Корневые стили
+:root {
+  font-size: 20px;
+}
+
+// Нулевые стили
+@import "nullstyles";
+
+// Стили блоков
+@import "header";
+@import "footer";
+
+// Обертка для страницы
+.pageWrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  main {
+    flex: 1 1 auto;
+    width: 100%;
+    padding: 1rem 0;
+
+    .container {
+      @extend %uiContainer;
+    }
+  }
+}

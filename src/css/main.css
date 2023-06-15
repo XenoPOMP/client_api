@@ -1,0 +1,123 @@
+@charset "UTF-8";
+:root {
+  font-size: 20px;
+}
+
+footer .container, header .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pageWrapper main .container, footer .container, header .container {
+  margin: 0 auto;
+  width: min(100% - 80px, 1280px);
+}
+
+footer .container, header .container {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Старые версии Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Версия без префикса, в данный момент
+   поддерживается в Chrome, Edge, Opera и Firefox */
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: system-ui;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+footer .container, header .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pageWrapper main .container, footer .container, header .container {
+  margin: 0 auto;
+  width: min(100% - 80px, 1280px);
+}
+
+footer .container, header .container {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Старые версии Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Версия без префикса, в данный момент
+   поддерживается в Chrome, Edge, Opera и Firefox */
+}
+
+header {
+  font-size: 1rem;
+  width: 100%;
+  background: black;
+  color: white;
+}
+header .container {
+  font-size: 1em;
+  padding: 0.5em 0;
+  justify-content: space-between !important;
+}
+header .container .logo {
+  font-weight: bold;
+}
+
+footer .container, header .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pageWrapper main .container, footer .container, header .container {
+  margin: 0 auto;
+  width: min(100% - 80px, 1280px);
+}
+
+footer .container, header .container {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Старые версии Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Версия без префикса, в данный момент
+   поддерживается в Chrome, Edge, Opera и Firefox */
+}
+
+footer {
+  background: black;
+  font-size: 1rem;
+  width: 100%;
+  color: white;
+}
+footer .container {
+  font-size: 1em;
+  padding: 0.5em 0;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.pageWrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.pageWrapper main {
+  flex: 1 1 auto;
+  width: 100%;
+  padding: 1rem 0;
+}
+
+/*# sourceMappingURL=main.css.map */

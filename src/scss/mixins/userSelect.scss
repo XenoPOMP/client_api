@@ -1,0 +1,9 @@
+@mixin userSelect($select) {
+  -webkit-touch-callout: $select; /* iOS Safari */
+    -webkit-user-select: $select; /* Safari */
+     -khtml-user-select: $select; /* Konqueror HTML */
+       -moz-user-select: $select; /* Старые версии Firefox */
+        -ms-user-select: $select; /* Internet Explorer/Edge */
+            user-select: $select; /* Версия без префикса, в данный момент
+                                     поддерживается в Chrome, Edge, Opera и Firefox */
+}

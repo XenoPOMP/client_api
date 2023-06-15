@@ -1,0 +1,22 @@
+@import "templates";
+
+header {
+  font-size: 1rem; // 1rem = 20px
+  width: 100%;
+  background: black;
+  color: white;
+
+  .container {
+    @extend %flexCenter;
+    @extend %uiContainer;
+    @extend %notSelectable;
+
+    font-size: 1em; // 1em = 20px
+    padding: .5em 0;
+    justify-content: space-between !important;
+
+    .logo {
+      font-weight: bold;
+    }
+  }
+}
