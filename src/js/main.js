@@ -1,5 +1,8 @@
 $(document).ready(function () {
 	$('button#data-fetcher').click(function () {
+		// Вставляем в таблицу надпись Loading...
+		$('table#response > tbody').html('Loading...');
+
 		Rest.get('https://jsonplaceholder.typicode.com/users/1/todos')
 			.then(response => response.json())
 			.then(json => {
