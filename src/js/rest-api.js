@@ -27,14 +27,16 @@ class Rest {
 	/**
 	 * Метод, отвечающий за отправку POST запросов.
 	 *
-	 * @param {string} url       адрес, по которому должен быть выполнен запрос
+	 * @param {string} url       								   			 адрес, по которому должен быть выполнен запрос
+	 * @param {Record<string, any>|string} [body]				 тело запроса.
 	 *
 	 * @return {Promise<any>}    результат запроса
 	 */
-	static post(url) {
+	static post(url, body) {
 		return fetch(url, {
 			method: 'POST',
 			mode: 'cors',
+			body,
 		}).catch(reason => {
 			throw new RestError(400, reason);
 		});
