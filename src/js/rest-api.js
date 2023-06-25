@@ -40,3 +40,30 @@ class Rest {
 		});
 	}
 }
+
+/**
+ * Эта функция добавляет search params к URL адресу.
+ *
+ * @param {string} [url]											целевой URL.
+ * @param {Record<string, any>} [params]			параметры запроса.
+ *
+ * @return {string}
+ */
+const urlWithSearchParams = (url, params) => {
+	/**
+	 * Строка, содержащая параметры. (parameter1=lorem&year=2077)
+	 *
+	 * @type {string|undefined}
+	 */
+	let paramsString = Object.keys(params)
+		.map(parameterKey => {
+			return `${parameterKey}=${params[parameterKey]}`;
+		})
+		.join('&');
+
+	return `${url}${paramsString ? `?${paramsString}` : ''}`;
+};
+
+const newUrl = urlWithSearchParams('http://path/to/api', {
+	key_1: 'value',
+}); // http://path/to/api?key_1=value
