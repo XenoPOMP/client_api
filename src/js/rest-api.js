@@ -63,7 +63,3 @@ const urlWithSearchParams = (url, params) => {
 
 	return `${url}${paramsString ? `?${paramsString}` : ''}`;
 };
-
-const newUrl = urlWithSearchParams('http://path/to/api', {
-	key_1: 'value',
-}); // http://path/to/api?key_1=value
