@@ -55,11 +55,13 @@ const urlWithSearchParams = (url, params) => {
 	 *
 	 * @type {string|undefined}
 	 */
-	let paramsString = Object.keys(params)
-		.map(parameterKey => {
-			return `${parameterKey}=${params[parameterKey]}`;
-		})
-		.join('&');
+	let paramsString = params
+		? Object.keys(params)
+				.map(parameterKey => {
+					return `${parameterKey}=${params[parameterKey]}`;
+				})
+				.join('&')
+		: undefined;
 
 	return `${url}${paramsString ? `?${paramsString}` : ''}`;
 };
